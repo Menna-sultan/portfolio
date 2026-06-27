@@ -126,17 +126,17 @@
             <Motion
               class="absolute -right-16 top-2 w-8 h-8 rounded-full bg-gradient-to-br from-pink-200 to-purple-200 opacity-80 shadow-xl pointer-events-none"
               :animate="{ x: [0, -6, 0], rotate: [0, 10, 0] }"
-              :transition="{ duration: 5, repeat: Infinity, ease: 'easeInOut' }"
+              :transition="{ duration: 2, repeat: Infinity, ease: 'easeInOut' }"
             />
                 <Motion
               class="absolute -right-8 top-16 w-4 h-4 rounded-full bg-gradient-to-br from-pink-200 to-purple-200 opacity-80 shadow-xl pointer-events-none"
               :animate="{ x: [0, -6, 0], rotate: [0, 10, 0] }"
-              :transition="{ duration: 5, repeat: Infinity, ease: 'easeInOut' }"
+              :transition="{ duration: 2, repeat: Infinity, ease: 'easeInOut' }"
             />
             <Motion
               class="absolute -left-8 -bottom-6 w-8 h-8 rounded-full bg-gradient-to-br from-pink-200 to-purple-200 shadow-sm pointer-events-none"
               :animate="{ y: [0, -6, 0], x: [0, 4, 0] }"
-              :transition="{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }"
+              :transition="{ duration: 2, repeat: Infinity, ease: 'easeInOut' }"
             />
              
 
@@ -144,7 +144,7 @@
             <Motion
               class="absolute -bottom-8 right-14 w-16 h-16 rounded-full bg-white/95 flex items-center justify-center shadow-lg border border-gray-200 z-20"
               :animate="{ y: [0, -6, 0] }"
-              :transition="{ duration: 3, repeat: Infinity, ease: 'easeInOut' }"
+              :transition="{ duration: 2, repeat: Infinity, ease: 'easeInOut' }"
             >
               <i class="fa-brands fa-figma text-2xl"></i>
             </Motion>
@@ -152,7 +152,7 @@
             <Motion
               class="absolute -top-5 right-16 w-14 h-14 rounded-full bg-white/95 flex items-center justify-center shadow-xl border border-gray-200 z-20"
               :animate="{  y: [0, 6, 0] }"
-              :transition="{ duration: 4, repeat: Infinity, ease: 'easeInOut' }"
+              :transition="{ duration: 2, repeat: Infinity, ease: 'easeInOut' }"
             >
               <img src="/ps.png" alt="ps" class="w-7 h-7" />
             </Motion>

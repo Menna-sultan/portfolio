@@ -30,7 +30,7 @@ export const projects: Project[] = [
     image: "/Diplomas.png",
     mainCategory: "Frontend",
     categories: ["frontend"],
-    liveDemoUrl: "https://exam-app-blue-delta.vercel.app",
+    liveDemoUrl: "https://online-exam-app-six.vercel.app",
     githubUrl: "https://github.com/Menna-sultan/exam-app.git",
     technologies: [
   "Next.js",

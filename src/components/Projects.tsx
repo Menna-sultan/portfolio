@@ -58,8 +58,8 @@ export default function Projects() {
                   {/* soft overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#6B6FD6]/40 via-transparent to-transparent"></div>
                   {/* icons */}
-                  <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
-                    {project.liveDemoUrl && (
+<div className="absolute top-4 right-4 flex gap-2">
+                      {project.liveDemoUrl && (
                       <a
                         href={project.liveDemoUrl}
                         target="_blank"

@@ -30,10 +30,43 @@ export const projects: Project[] = [
     image: "/Diplomas.png",
     mainCategory: "Frontend",
     categories: ["frontend"],
-    liveDemoUrl: "https://madarerpsystem.vercel.app",
-    githubUrl: "https://github.com/Menna-sultan/ERP-System",
-    technologies: ["Vue.js 3", "Tailwind CSS", "Chart.js", "ECharts"],
+    liveDemoUrl: "https://exam-app-blue-delta.vercel.app",
+    githubUrl: "https://github.com/Menna-sultan/exam-app.git",
+    technologies: [
+  "Next.js",
+  "React",
+  "TypeScript",
+  "Tailwind CSS",
+  "shadcn/ui",
+  "React Query",
+  "NextAuth.js"
+],
   },
+
+  {
+    title: "Rose APP",
+    year: "2026",
+    description:
+      "An e-commerce platform for gifts, flowers, and gift boxes for occasions like birthdays, weddings, engagements, and anniversaries. Includes a customer storefront with cart, wishlist, Stripe card payments, and push notifications, plus an admin dashboard for managing products, categories, occasions, orders, and revenue",
+    image: "/rose app.png",
+    mainCategory: "Frontend",
+    categories: ["frontend"],
+    liveDemoUrl: "https://rose-app-team-6.vercel.app",
+    githubUrl: "https://github.com/Roma-2006/rose-app-team-6.git",
+      technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Stripe",
+    "Recharts",
+    "i18n (Arabic / English)",
+  ],
+  },
+
+
+
+
   {
     title: "ERP Web Application",
     year: "2026",

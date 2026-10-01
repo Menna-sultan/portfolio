@@ -6,114 +6,243 @@ const ROLE = "Frontend Developer & UI/UX Designer";
 
 export default function Hero() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20">
-      <motion.div
-        className="hidden lg:flex justify-center items-center order-2 lg:order-2"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, delay: 0.2 }}
-      >
-        <div className="relative w-[350px] h-[350px] flex items-center justify-center">
-          <div className="absolute inset-2 rounded-full overflow-hidden shadow-2xl z-20">
-            <img src="/girl2.png" alt="Menna Allah" className="w-full h-110 object-cover" />
-          </div>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-10">
+    
 
-          <motion.div className="absolute inset-0 rounded-full border border-violet-500/30 z-10 -translate-x-4" />
 
-          <motion.div
-            className="absolute -right-16 top-2 w-8 h-8 rounded-full bg-gradient-to-br from-pink-200 to-purple-200 opacity-80 shadow-xl pointer-events-none"
-            animate={{ x: [0, -6, 0], rotate: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          />
 
-          <motion.div
-            className="absolute -right-8 top-16 w-4 h-4 rounded-full bg-gradient-to-br from-pink-200 to-purple-200 opacity-80 shadow-xl pointer-events-none"
-            animate={{ x: [0, -6, 0], rotate: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          />
+{/* Right Hero Visual */}
+<motion.div 
+  className="flex justify-center items-center order-1 lg:order-2 lg:-mt-10"
+  initial={{ opacity: 0, x: 50 }} 
+  animate={{ opacity: 1, x: 0 }} 
+  transition={{ duration: 0.9, delay: 0.2 }} 
+>
+  <div className="relative w-[360px] h-[360px] lg:w-[470px] lg:h-[470px]">
 
-          <motion.div
-            className="absolute -left-8 -bottom-6 w-8 h-8 rounded-full bg-gradient-to-br from-pink-200 to-purple-200 shadow-sm pointer-events-none"
-            animate={{ y: [0, -6, 0], x: [0, 4, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          />
+    {/* Soft Glow */}
+    <motion.div
+      className="
+        absolute
+        inset-12
+        rounded-full
+        bg-gradient-to-br
+        from-violet-300/30
+        via-purple-200/20
+        to-pink-200/30
+        blur-3xl
+      "
+      animate={{
+        scale: [1, 1.08, 1],
+        opacity: [0.5, 0.8, 0.5],
+      }}
+      transition={{
+        duration: 5,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    />
 
-          <motion.div
-            className="absolute -bottom-8 right-14 w-16 h-16 rounded-full bg-white/95 flex items-center justify-center shadow-lg border border-gray-200 z-20"
-            animate={{ y: [0, -6, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <i className="fa-brands fa-figma text-2xl"></i>
-          </motion.div>
+    {/* Rotating Ring */}
+    <motion.div
+      className="
+        absolute
+        inset-6
+        rounded-full
+        border
+        border-violet-300/30
+      "
+      animate={{ rotate: 360 }}
+      transition={{
+        duration: 18,
+        repeat: Infinity,
+        ease: "linear",
+      }}
+    />
 
-          <motion.div
-            className="absolute -top-5 right-16 w-14 h-14 rounded-full bg-white/95 flex items-center justify-center shadow-xl border border-gray-200 z-20"
-            animate={{ y: [0, 6, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <img src="/ps.png" alt="ps" className="w-7 h-7" />
-          </motion.div>
+    {/* Small orbit dots */}
+    <motion.div
+      className="
+        absolute
+        top-8
+        right-20
+        w-3
+        h-3
+        rounded-full
+        bg-violet-400
+        shadow-lg
+        shadow-violet-300
+        z-30
+      "
+      animate={{
+        y: [0, -10, 0],
+        opacity: [0.5, 1, 0.5],
+      }}
+      transition={{
+        duration: 2.5,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    />
 
-          <motion.div
-            className="absolute top-25 -left-8 w-14 h-14 rounded-full bg-white/95 flex items-center justify-center shadow-xl border border-gray-200 z-20"
-            animate={{ y: [0, 6, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <img src="/program.png" alt="ps" className="w-7 h-7" />
-          </motion.div>
-        </div>
-      </motion.div>
+    <motion.div
+      className="
+        absolute
+        bottom-20
+        left-10
+        w-2.5
+        h-2.5
+        rounded-full
+        bg-pink-300
+        z-30
+      "
+      animate={{
+        y: [0, 8, 0],
+        x: [0, 5, 0],
+      }}
+      transition={{
+        duration: 3,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    />
 
-      <motion.div
-        className="lg:hidden flex justify-center items-center order-1"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, delay: 0.2 }}
-      >
-        <div className="relative w-[320px] h-[320px] flex items-center justify-center">
-          <div className="absolute inset-2 rounded-full overflow-hidden shadow-2xl z-20">
-            <img src="/girl2.png" alt="Menna Allah" className="w-full h-110 object-cover" />
-          </div>
+    {/* Main Image */}
+    <motion.div
+      className="
+        absolute
+        inset-10
+        rounded-full
+        overflow-hidden
+        shadow-[0_25px_70px_rgba(92,65,150,0.18)]
+        border
+        border-white
+        z-20
+      "
+      animate={{
+        y: [0, -7, 0],
+      }}
+      transition={{
+        duration: 4,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    >
+      <img
+        src="/hero.png"
+        alt="Frontend Developer and UI/UX Designer"
+        className="w-full h-full object-cover"
+      />
+    </motion.div>
 
-          <motion.div className="absolute inset-0 rounded-full border border-violet-500/30 z-10 -translate-x-2" />
+    {/* Frontend Badge */}
+    <motion.div
+      className="
+        absolute
+        top-16
+        -left-2
+        lg:left-0
+        px-4
+        py-2
+        rounded-full
+        bg-white/90
+        backdrop-blur-md
+        border
+        border-violet-100
+        shadow-[0_10px_30px_rgba(80,60,130,0.12)]
+        text-sm
+        font-semibold
+        text-[#5B4BB7]
+        z-40
+      "
+      animate={{
+        y: [0, -8, 0],
+        rotate: [-2, 0, -2],
+      }}
+      transition={{
+        duration: 3.5,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    >
+      Frontend Developer
+    </motion.div>
 
-          <motion.div
-            className="absolute -right-10 top-2 w-7 h-7 rounded-full bg-gradient-to-br from-pink-200 to-purple-200 opacity-80 shadow-xl pointer-events-none"
-            animate={{ x: [0, -6, 0], rotate: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          />
-          <motion.div
-            className="absolute -right-6 top-16 w-4 h-4 rounded-full bg-gradient-to-br from-pink-200 to-purple-200 opacity-80 shadow-xl pointer-events-none"
-            animate={{ x: [0, -6, 0], rotate: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          />
-          <motion.div
-            className="absolute -left-8 -bottom-6 w-7 h-7 rounded-full bg-gradient-to-br from-pink-200 to-purple-200 shadow-sm pointer-events-none"
-            animate={{ y: [0, -6, 0], x: [0, 4, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          />
+    {/* UI/UX Badge */}
+    <motion.div
+      className="
+        absolute
+        bottom-20
+        -right-2
+        lg:right-0
+        px-4
+        py-2
+        rounded-full
+        bg-white/90
+        backdrop-blur-md
+        border
+        border-pink-100
+        shadow-[0_10px_30px_rgba(80,60,130,0.12)]
+        text-sm
+        font-semibold
+        text-[#8B5CF6]
+        z-40
+      "
+      animate={{
+        y: [0, 8, 0],
+        rotate: [2, 0, 2],
+      }}
+      transition={{
+        duration: 3.8,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    >
+      UI/UX Designer
+    </motion.div>
 
-          <motion.div
-            className="absolute -bottom-6 right-16 w-14 h-14 rounded-full bg-white/95 flex items-center justify-center shadow-lg border border-gray-200 z-20"
-            animate={{ y: [0, -6, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <i className="fa-brands fa-figma text-2xl"></i>
-          </motion.div>
+    {/* Design & Development Badge */}
+    <motion.div
+      className="
+        absolute
+        bottom-7
+        left-20
+        px-3
+        py-1.5
+        rounded-full
+        bg-white/90
+        backdrop-blur-sm
+        border
+        border-pink-300
+        text-xs
+        font-semibold
+        text-pink-300
+        z-40
+      "
+      animate={{
+        x: [0, 5, 0],
+        y: [0, -4, 0],
+      }}
+      transition={{
+        duration: 3,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    >
+Design & Development
+    </motion.div>
 
-          <motion.div
-            className="absolute -top-4 right-10 w-12 h-12 rounded-full bg-white/95 flex items-center justify-center shadow-xl border border-gray-200 z-20"
-            animate={{ y: [0, 6, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <img src="/ps.png" alt="ps" className="w-6 h-6" />
-          </motion.div>
+  </div>
+</motion.div>
 
-          <motion.div className="absolute top-20 -left-6 w-12 h-12 rounded-full bg-white/95 flex items-center justify-center shadow-xl border border-gray-200 z-20">
-            <img src="/program.png" alt="program" className="w-6 h-6" />
-          </motion.div>
-        </div>
-      </motion.div>
+
+
+
+
+
+
+
+
 
       <motion.div
         initial={{ opacity: 0, x: -50 }}

@@ -5,8 +5,8 @@ const skills = [
     Icon: Monitor,
     color: "text-[#614BAC]",
     title: "Frontend Development",
-    desktop: "Building responsive, interactive SPAs with Vue.js & React.",
-    mobile: "Responsive, interactive SPAs with Vue.js & React.",
+    desktop: "Building responsive, interactive SPAs with React & Next.js.",
+    mobile: "Responsive, interactive SPAs with React & Next.js.",
     radius: "rounded-tl-[64px] rounded-tr-[32px] rounded-bl-[16px] rounded-br-[32px]",
   },
   {
